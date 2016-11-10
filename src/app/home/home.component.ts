@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { AlertComponent } from 'ng2-bootstrap/ng2-bootstrap';
+
 import { AppState } from '../app.service';
 import { Title } from './title';
 import { XLarge } from './x-large';
@@ -21,6 +23,7 @@ import { XLarge } from './x-large';
 export class HomeComponent {
   // Set our default values
   localState = { value: '' };
+  date: Date = new Date();
   // TypeScript public modifiers
   constructor(public appState: AppState, public title: Title) {
 
